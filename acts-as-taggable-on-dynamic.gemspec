@@ -19,15 +19,15 @@ Gem::Specification.new do |gem|
   if File.exists?('UPGRADING')
     gem.post_install_message = File.read('UPGRADING')
   end
-
-  gem.add_dependency "railties", "~> 3.1"
+  
+  gem.add_dependency 'railties', '~> 4.2.0'
   gem.add_runtime_dependency 'acts-as-taggable-on'
   gem.add_runtime_dependency 'handlebars_assets'
   gem.add_runtime_dependency 'inflection-js-rails'
 
-  gem.add_development_dependency 'rspec', '~> 2.6'
+  gem.add_development_dependency 'rspec', '~> 3.2.0'
   gem.add_development_dependency 'sqlite3'
-  gem.add_development_dependency 'mysql2', '~> 0.3.7'
+  gem.add_development_dependency 'mysql2', '~> 0.3.18'
   gem.add_development_dependency 'guard'
   gem.add_development_dependency 'guard-rspec'
 end
